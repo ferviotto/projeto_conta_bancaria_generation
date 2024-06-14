@@ -10,7 +10,7 @@ public class Menu {
 		// TODO Auto-generated method stub
 		
 		//Teste da Classe Conta
-		 ModelConta c1 = new ModelConta(1, 123, 1, "Fernanda",10000.0f);
+		ModelConta c1 = new ModelConta(1, 123, 1, "Fernanda",10000.0f);
 		c1.visualizar();
 		c1.sacar(12000.0f);
 		c1.visualizar();
@@ -22,7 +22,7 @@ public class Menu {
 		int op;
 				
 		while(true) {
-			System.out.println(Cores.TEXT_BLUE_BRIGHT + Cores.ANSI_BLACK_BACKGROUND
+			System.out.println(cores.TEXT_BLUE_BRIGHT);
 			System.out.println("\n \tBanco da Fer");
 			System.out.println("\n1 - Criar Conta");
 			System.out.println("\n2 - Listar todas as contas");
@@ -48,6 +48,7 @@ public class Menu {
 			}
 			
 			switch (op) {
+			
 			case 1:
 				System.out.println(cores.TEXT_PURPLE + "\nCriar conta");
 				break;
@@ -58,25 +59,30 @@ public class Menu {
 				
 			case 3:
 				System.out.println(cores.TEXT_YELLOW + "\nConsultar dados da conta por número");
-               		 	break;
+               			break;
+               	
 			case 4:
 				System.out.println(cores.TEXT_BLUE + "\nAtualizar dados da conta");
 				break;
+				
 			case 5:
 				System.out.println(cores.TEXT_PURPLE_BRIGHT + "\nApagar a conta");
 				break;
+				
 			case 6:
 				System.out.println(cores.TEXT_GREEN_BOLD + "\nSaque");
-              		 	break;
+              			break;
+              	
 			case 7:
 				System.out.println(cores.TEXT_YELLOW_BOLD + "\nDepósito");
                 		break;
+                
 			case 8:
 				System.out.println(cores.TEXT_BLUE_BRIGHT + "\nTransferência entre contas");
                 		break;
 				default:
 				System.out.println(cores.TEXT_RED_BOLD + "\nOpção Inválida. Por favor, digite uma opção válida." + cores.TEXT_RESET);
-                		break;
+               			break;
 			}
 		}	
 	}
