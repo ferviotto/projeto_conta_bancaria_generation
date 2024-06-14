@@ -10,7 +10,7 @@ public class ModelConta {
 	private float saldo;
     
     // Criação do construtor
-	public Conta(int numero, int agencia, int tipo, String titular, float saldo) {
+	public ModelConta(int numero, int agencia, int tipo, String titular, float saldo) {
 		this.numero = numero;
 		this.agencia = agencia;
 		this.tipo = tipo;
@@ -63,7 +63,7 @@ public class ModelConta {
 	public boolean sacar(float valor) { 
 		
 		if(this.getSaldo() < valor) {
-			System.out.println("\n Saldo Insuficiente!");
+			System.out.println("\nSaldo Insuficiente!");
 			return false;
 		}
 			
@@ -90,12 +90,12 @@ public class ModelConta {
 		break;
 		}
 		
-		System.out.println("Dados da Conta:");
-		System.out.println("Numero da Conta: " + this.numero);
-		System.out.println("Agência: " + this.agencia);
-		System.out.println("Tipo da Conta: " + tipo);
-		System.out.println("Titular: " + this.titular);
-		System.out.println("Saldo: " + this.saldo);
+		System.out.println("\nDados da Conta:");
+		System.out.println("\nNumero da Conta: " + this.numero);
+		System.out.println("\nAgência: " + this.agencia);
+		System.out.println("\nTipo da Conta: " + tipo);
+		System.out.println("\nTitular: " + this.titular);
+		System.out.println("\nSaldo: " + this.saldo);
 
 	}
   
