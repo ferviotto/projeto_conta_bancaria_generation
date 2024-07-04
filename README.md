@@ -4,7 +4,7 @@ Este é um projeto modelo de conta bancária ministrado no Bootcamp da Generatio
 ## Descrição:
 
 1. Cada Branch é uma versão do projeto;
-3. A ContaMenuCores(v1) é a primeira versçao, onde criei a Classe Menu e a Classe Util Cores;
+3. A ContaMenuCores(v1) é a primeira versão, onde criei a Classe Menu e a Classe Util Cores;
 4. A ContaModelMenu(v2) é a segunda versão, onde adiciono a criação da ModelConta e declaro os atributos, o construtor, os getters e setters e os demais métodos;
 5. A ContaCorrentePoupanca(v3) é a terceira versão, onde adiciono a criação da ContaCorrente e ContaPoupança que herdaram os métodos da ModelConta, além de usar a anotação @override para sobreescrever métodos específicos a cada Classe;
 7. A ContaRepository(v4) é a quarta versão, onde adiciono a criação da ContaRepository apresentando o CRUD da conta e os métodos bancários;
